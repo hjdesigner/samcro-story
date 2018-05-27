@@ -1,73 +1,205 @@
 {
-  "profile": [
+  "showcase": [
     {
       "id": 1,
-      "name": "Carol",
-      "lastname": "Melanda",
-      "email": "hjdesigner23@gmail.com",
-      "sex": "Masculino",
-      "cpf": "232.107.978-97",
-      "birthDate": "27/12/1990"
-    }
-  ],
-  "address": [
-    {
-      "id": 0,
-      "title": "Principal",
-      "name": "Henrique Melanda",
-      "street": "Rua Atalaia Velha",
-      "number": "140",
-      "complement": "121C",
-      "neighborhood": "Vila Canero",
-      "state": "São Paulo",
-      "city": "SP",
-      "zipeCode": "03191-140"
+      "name": "camisa levi’s",
+      "url": "/camisa-levis",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/xdhrdbpszre2sqjdzpmz.jpg",
+      "priceOrigin": "90,00",
+      "priceCurrent": "63,00"
     },
     {
-      "id": 1,
-      "title": "Secundário",
-      "name": "Caroline Duarte",
-      "street": "Rua Nebulosa",
-      "number": "203",
-      "complement": "",
-      "neighborhood": "Vila Formosa",
-      "state": "São Paulo",
-      "city": "SP",
-      "zipeCode": "00091-140"
-    }
-  ],
-  "orderProduct": [
-    {
-      "id": 0,
-      "name": "Dafiti Shoes Nó Nude",
-      "image": "https://t-static.dafiti.com.br/In9k6pRnX7EzdSHDjxnrl8-ZUKI=/fit-in/333x483/dafitistatic-a.akamaihd.net%2fp%2fdafiti-shoes-sapatilha-dafiti-shoes-n%25c3%25b3-nude-3787-3300963-1-product.jpg",
-      "description": "Sapatilha DAFITI SHOES Nó Nude Tipo de Produto: Sapatilha",
-      "date": "10/12/2017"
+      "id": 2,
+      "name": "vestido plissado",
+      "url": "/vestido-plissado",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/myneq1eiq9zwu9cegwz0.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "100,00"
     },
     {
-      "id": 1,
-      "name": "Ana Cristina",
-      "image": "https://t-static.dafiti.com.br/U7T3mRS2DyW1VHwD4MRs8ZP_Wd0=/fit-in/333x483/dafitistatic-a.akamaihd.net%2fp%2fana-cristina-sapatilha-ana-cristina-la%25c3%25a7o-preto-8564-0537373-1-product.jpg",
-      "description": "Sapatilha Ana Cristina Laço Preto Tipo de Produto: Sapatilha",
-      "date": "10/12/2017"
-    }
-  ],
-  "wishlist": [
-    {
-      "id": 0,
-      "url": "https://www.dafiti.com.br/Tenis-FiveBlu-Escalator-Duo-DVB14091-Marrom-2699793.html",
-      "image": "https://dafitistatic-a.akamaihd.net/p/FiveBlu-T%C3%AAnis-FiveBlu-Escalator-Duo-DVB14091-Marrom-0609-3979962-1-feed.jpg",
-      "name": "FiveBlu",
-      "valueDe": "119,90",
-      "valuePor": "99,99"
+      "id": 3,
+      "name": "forever 21 saia rosa tubinho",
+      "url": "/forever-21-saia-rosa-tubinho",
+      "image": "https://res-1.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/irl173bqdilwbe7nbhwk.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "40,00"
     },
     {
+      "id": 4,
+      "name": "body forever 21 rose",
+      "url": "/body-forever-21-rose",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/arqy2iuypk9jlstq8lyl.jpg",
+      "priceOrigin": "180,00",
+      "priceCurrent": "150,00"
+    },
+    {
+      "id": 5,
+      "name": "vestido floral",
+      "url": "/vestido-floral",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/nsc4a8w75svumdlcfobz.jpg",
+      "priceOrigin": "60,00",
+      "priceCurrent": "50,00"
+    },
+    {
+      "id": 6,
+      "name": "vestido floral",
+      "url": "/vestido-floral",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/nsc4a8w75svumdlcfobz.jpg",
+      "priceOrigin": "60,00",
+      "priceCurrent": "50,00"
+    },
+    {
+      "id": 7,
+      "name": "vestido babado flores",
+      "url": "/vestido-babado-flores",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/n691vmaywbswdm5vvj2f.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "100,00"
+    },
+    {
+      "id": 8,
+      "name": "vestido babado flores",
+      "url": "/vestido-babado-flores",
+      "image": "https://res-2.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/ek9ucfqyv6a7hjzufua9.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "20,00"
+    },
+    {
+      "id": 9,
+      "name": "saia jeans evasê",
+      "url": "/saia-jeans-evasê",
+      "image": "https://res-5.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/xpt7r1uhyavle6xqsvum.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "60,00"
+    },
+    {
+      "id": 10,
+      "name": "saia reta estampada",
+      "url": "/saia-reta-estampada",
+      "image": "https://res-2.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/kjct7tmzbq80fr5krebf.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "85,00"
+    }
+  ],
+  "product": [
+    {
       "id": 1,
-      "url": "https://www.dafiti.com.br/Tenis-Mizuno-Wing-N-Cinza%2FRoxo-2878853.html",
-      "image": "https://t-static.dafiti.com.br/e06XDwmFZ72bOCMtoNzGH8vyhj8=/fit-in/333x483/dafitistatic-a.akamaihd.net%2fp%2fmizuno-t%25c3%25aanis-mizuno-wing-n-cinza%252froxo-8064-3588782-1-product.jpg",
-      "name": "FiveBlu",
-      "valueDe": "279,90",
-      "valuePor": "149,99"
+      "name": "camisa levi’s",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/xdhrdbpszre2sqjdzpmz.jpg",
+      "priceOrigin": "90,00",
+      "priceCurrent": "63,00",
+      "installmentPayment": "3",
+      "installmentValue": "12,60",
+      "salesman": "Henrique",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 2,
+      "name": "vestido plissado",
+      "url": "/vestido-plissado",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/myneq1eiq9zwu9cegwz0.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "100,00",
+      "installmentPayment": "3",
+      "installmentValue": "33,33",
+      "salesman": "Caroline",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 3,
+      "name": "forever 21 saia rosa tubinho",
+      "url": "/forever-21-saia-rosa-tubinho",
+      "image": "https://res-1.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/irl173bqdilwbe7nbhwk.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "40,00",
+      "installmentPayment": "3",
+      "installmentValue": "13,33",
+      "salesman": "Caroline",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 4,
+      "name": "body forever 21 rose",
+      "url": "/body-forever-21-rose",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/arqy2iuypk9jlstq8lyl.jpg",
+      "priceOrigin": "180,00",
+      "priceCurrent": "150,00",
+      "installmentPayment": "3",
+      "installmentValue": "50,00",
+      "salesman": "Enzo",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 5,
+      "name": "vestido floral",
+      "url": "/vestido-floral",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/nsc4a8w75svumdlcfobz.jpg",
+      "priceOrigin": "60,00",
+      "priceCurrent": "50,00",
+      "installmentPayment": "3",
+      "installmentValue": "16,66",
+      "salesman": "Enzo",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 6,
+      "name": "vestido floral",
+      "url": "/vestido-floral",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/nsc4a8w75svumdlcfobz.jpg",
+      "priceOrigin": "60,00",
+      "priceCurrent": "50,00",
+      "installmentPayment": "3",
+      "installmentValue": "16,66",
+      "salesman": "Enzo",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 7,
+      "name": "vestido babado flores",
+      "url": "/vestido-babado-flores",
+      "image": "https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/n691vmaywbswdm5vvj2f.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "100,00",
+      "installmentPayment": "3",
+      "installmentValue": "33,33",
+      "salesman": "Carol",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 8,
+      "name": "vestido babado flores",
+      "url": "/vestido-babado-flores",
+      "image": "https://res-2.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/ek9ucfqyv6a7hjzufua9.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "20,00",
+      "installmentPayment": "",
+      "installmentValue": "",
+      "salesman": "Carol",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 9,
+      "name": "saia jeans evasê",
+      "url": "/saia-jeans-evasê",
+      "image": "https://res-5.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/xpt7r1uhyavle6xqsvum.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "60,00",
+      "installmentPayment": "3",
+      "installmentValue": "20,00",
+      "salesman": "Carol",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
+    },
+    {
+      "id": 10,
+      "name": "saia reta estampada",
+      "url": "/saia-reta-estampada",
+      "image": "https://res-2.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/kjct7tmzbq80fr5krebf.jpg",
+      "priceOrigin": "",
+      "priceCurrent": "85,00",
+      "installmentPayment": "3",
+      "installmentValue": "28,33",
+      "salesman": "Henrique",
+      "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas faucibus lobortis. Mauris at venenatis justo, sed tincidunt lectus. Praesent a sem vitae libero imperdiet consectetur. Sed rhoncus aliquet lorem eget porttitor. Fusce sit amet augue eget mi convallis consequat. Maecenas lorem nulla, pulvinar sed porttitor aliquet, porta et lacus. Mauris volutpat interdum sapien, sit amet suscipit augue ornare ac. Donec quis massa venenatis metus tincidunt porta. Quisque metus tellus, vestibulum quis urna a, congue suscipit sapien. Praesent ultricies sem leo, eu consectetur lacus placerat eget. Ut elit elit, consectetur ac mauris a, consectetur tincidunt magna. Proin blandit sodales interdum."
     }
   ]
 }
