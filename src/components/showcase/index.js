@@ -2,15 +2,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Showcase = () => (
+const Showcase = ({ items }) => (
   <ul>
-    <li>
-      <Link to='/camisa-levis'>
-        <figure>
-          <img src='https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/xdhrdbpszre2sqjdzpmz.jpg' />
-        </figure>
-      </Link>
-    </li>
+    {items.map((item, index) =>
+      <li key={index}>
+        <Link to={item.url}>
+          <figure>
+            <img src={item.image} alt={item.name} />
+          </figure>
+          <h2>{item.name}</h2>
+          <div className='prices'>
+            <p className='price-origin'>{item.priceOrigin !== '' ? `De R$ ${item.priceOrigin}` : false}</p>
+            <p className='price-current'>Por R$ {item.priceCurrent}</p>
+          </div>
+        </Link>
+      </li>
+    )}
   </ul>
 )
 
