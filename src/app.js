@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './components/header'
 import Showcase from './components/showcase'
+import Product from './components/product'
 import './default.scss'
 
 class App extends Component {
@@ -26,7 +27,8 @@ class App extends Component {
           <Header />
           <div className='main'>
             <div className='container'>
-              <Showcase items={this.state.showCase} />
+              <Route exact path='/' render={(...props) => (<Showcase items={this.state.showCase} />)} />
+              <Route path='/produto/:slug' component={Product} />
             </div>
           </div>
         </div>
