@@ -11,7 +11,7 @@ describe('<Showcase />', () => {
   beforeEach(() => {
     data1 = [
       {
-        'id': 1,
+        'id': '1',
         'name': 'camisa levi’s',
         'url': '/camisa-levis',
         'image': 'https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/xdhrdbpszre2sqjdzpmz.jpg',
@@ -21,7 +21,7 @@ describe('<Showcase />', () => {
     ]
     data2 = [
       {
-        'id': 1,
+        'id': '1',
         'name': 'camisa levi’s',
         'url': '/camisa-levis',
         'image': 'https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/xdhrdbpszre2sqjdzpmz.jpg',
@@ -29,7 +29,7 @@ describe('<Showcase />', () => {
         'priceCurrent': '63,00'
       },
       {
-        'id': 2,
+        'id': '2',
         'name': 'vestido plissado',
         'url': '/vestido-plissado',
         'image': 'https://res-3.cloudinary.com/enjoei/image/upload/a_0,c_fill,fl_lossy.progressive,g_center,h_294,q_70,w_276/myneq1eiq9zwu9cegwz0.jpg',
@@ -42,6 +42,9 @@ describe('<Showcase />', () => {
   })
   it('Should wrapper1 return one li', () => {
     expect(wrapper1.find('li')).to.have.length(1)
+  })
+  it('Wrapper1 should contain link whit data-id correct equal id', () => {
+    expect(wrapper1.find('[data-id="1"]')).to.have.length(1)
   })
   it('Should wrapper1 contain image equal to the past in the data1 image field', () => {
     const image = wrapper1.find('figure')
@@ -61,6 +64,12 @@ describe('<Showcase />', () => {
   })
   it('Should wrapper2 return two li', () => {
     expect(wrapper2.find('li')).to.have.length(2)
+  })
+  it('Wrapper2 should contain two link whit data-id correct equal id', () => {
+    const firstLi = wrapper2.find('li').at(0)
+    const lastLi = wrapper2.find('li').at(1)
+    expect(firstLi.find('[data-id="1"]')).to.have.length(1)
+    expect(lastLi.find('[data-id="2"]')).to.have.length(1)
   })
   it('Should wrapper2 contain two image equal to the past in the data2 image field', () => {
     const image1 = wrapper2.find('figure').at(0)

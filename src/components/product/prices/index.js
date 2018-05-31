@@ -1,5 +1,6 @@
 'use strict'
 import React from 'react'
+import './prices.scss'
 
 const Prices = ({ priceOrigin, priceCurrent, installmentPayment, installmentValue }) => (
   <div className='prices'>

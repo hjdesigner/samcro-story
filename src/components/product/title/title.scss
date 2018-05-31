@@ -1,0 +1,16 @@
+.title {
+  width: 100%;
+  h1 {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: rgb(0, 0, 0);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .title {
+    h1 {
+      font-size: 2em;
+    }
+  }
+}

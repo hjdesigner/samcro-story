@@ -3,11 +3,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './showcase.scss'
 
-const Showcase = ({ items }) => (
+const Showcase = ({ items, handleShowCase }) => (
   <ul className='showcase'>
     {items.map((item, index) =>
       <li key={index}>
-        <Link to={`/produto${item.url}`}>
+        <Link to={`/produto${item.url}`} onClick={handleShowCase} data-id={item.id}>
           <figure>
             <img src={item.image} alt={item.name} />
           </figure>

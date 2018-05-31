@@ -1,5 +1,6 @@
 'use strict'
 import React from 'react'
+import './salesman.scss'
 
 const Salesman = ({ name }) => (
   <div className='sales-man'>

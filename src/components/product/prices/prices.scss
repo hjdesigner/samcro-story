@@ -1,0 +1,33 @@
+.prices {
+  p {
+    margin: 0 0 10px 0;
+  }
+  &__origin {
+    color: rgb(202, 197, 191);
+    font-size: 1em;
+    text-decoration: line-through;
+  }
+  &__current {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(37, 36, 35);
+  }
+  &__installmente {
+    color: rgb(0,0,0);
+    font-size: .9em;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .prices {
+    &__origin {
+      font-size: 1.2em;
+    }
+    &__current {
+      font-size: 1.8em;
+    }
+    &__installmente {
+      font-size: 1em;
+    }
+  }
+}

@@ -10,14 +10,25 @@ class App extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      showCase: []
+      showCase: [],
+      product: {}
+    }
+    this.handleShowCase = (e) => {
+      const idProduct = e.target.closest('a').getAttribute('data-id')
+      fetch(`http://localhost:3004/product/${idProduct}`)
+        .then(response => response.json())
+        .then((data) => {
+          const result = data
+          this.setState({product: result})
+        })
     }
   }
   componentDidMount () {
     fetch('http://localhost:3004/showcase')
     .then(response => response.json())
     .then((data) => {
-      this.setState({showCase: data})
+      const result = data
+      this.setState({showCase: result})
     })
   }
   render () {
@@ -27,8 +38,8 @@ class App extends Component {
           <Header />
           <div className='main'>
             <div className='container'>
-              <Route exact path='/' render={(...props) => (<Showcase items={this.state.showCase} />)} />
-              <Route path='/produto/:slug' component={Product} />
+              <Route exact path='/' render={(...props) => (<Showcase items={this.state.showCase} handleShowCase={this.handleShowCase} />)} />
+              <Route exact path='/produto/:slug' render={(...props) => (<Product item={this.state.product} />)} />
             </div>
           </div>
         </div>
