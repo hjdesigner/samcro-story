@@ -1,7 +1,15 @@
 .header {
-  display: flex;
-  justify-content: center;
   padding: 10px 0;
   border-bottom: 20px solid rgb(34, 34, 34);
   background-color: rgb(255,255,255);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__cart {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
 }

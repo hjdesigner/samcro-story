@@ -2,8 +2,8 @@
 import React from 'react'
 import './button.scss'
 
-const Button = ({ text }) => (
-  <button>{text}</button>
+const Button = ({ text, handleClickProduct }) => (
+  <button onClick={handleClickProduct}>{text}</button>
 )
 
 export default Button

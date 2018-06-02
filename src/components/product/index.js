@@ -9,7 +9,7 @@ import Comments from './comments'
 import Description from './description'
 import './product.scss'
 
-const Product = ({ item }) => (
+const Product = ({ item, handleClickProduct }) => (
   <div className='product'>
     <div className='product__image'>
       <Image image={item.image} name={item.name} />
@@ -21,7 +21,7 @@ const Product = ({ item }) => (
         priceCurrent={item.priceCurrent}
         installmentPayment={item.installmentPayment}
         installmentValue={item.installmentValue} />
-      <Button text='Eu quero' />
+      <Button text='Eu quero' handleClickProduct={handleClickProduct} />
       <Salesman name={item.salesman} />
       <Comments />
     </div>
