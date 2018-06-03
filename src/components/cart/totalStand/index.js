@@ -13,7 +13,7 @@ const TotalStand = ({ cartNumber, totalStand, handleFinish }) => (
       </li>
       <li>
         <span className='total-stand__title'>frete</span>
-        <span className='total-stand__price'>-</span>
+        <span className='total-stand__price'>grátis</span>
       </li>
     </ul>
     <h3>Total: R$ {totalStand}</h3>

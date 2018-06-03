@@ -1,6 +1,6 @@
 .total-stand {
-  width: 30%;
-  padding: 0 0 0 20px;
+  width: 100%;
+  padding: 0 0 0 0;
   box-sizing: border-box;
   h2,
   h3 {
@@ -41,12 +41,23 @@
       background-color: rgb(149, 201, 63);
       color: rgb(255,255,255);
       font-weight: 500;
-      font-size: 1.3em;
+      font-size: 1em;
       text-transform: uppercase;
       text-align: center;
       line-height: 50px;
       margin: 20px 0 0px;
       text-decoration: none;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .total-stand {
+    width: 30%;
+    padding: 0 0 0 20px;
+    &__button {
+      a {
+        font-size: 1em;
+      }
     }
   }
 }
