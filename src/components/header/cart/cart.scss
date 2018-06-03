@@ -1,5 +1,14 @@
 .cart {
   position: relative;
+  transition: all .25s ease-in-out;
+  &:hover {
+    .cart {
+      &__number {
+        transition: all .25s ease-in-out;
+        background-color: rgb(165, 199, 77);
+      }
+    }
+  }
   &__number {
     position: absolute;
     top: -10px;
