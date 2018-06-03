@@ -4,10 +4,6 @@
 
 The project is an online platform that sells used products.
 
-## Screenshot
-
-![SAMCRO](http://henriquemelanda.com.br/assests/img/samcro.jpg)
-
 ## What's inside it?
 
 * ReactJs and React Router, for component construction, state control e routers
