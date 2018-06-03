@@ -2,6 +2,7 @@ button {
   width: 100%;
   max-width: 390px;
   height: 50px;
+  position: relative;
   border-radius: 5px;
   border: 0px;
   background-color: rgba(149, 201, 63, 1);
@@ -15,5 +16,29 @@ button {
   transition: all .25s ease-in-out;
   &:hover {
     background-color: rgba(149, 201, 63, .9);
+  }
+  &.add {
+    &:after {
+      content: "Produto adicionado com sucesso no carrinho";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      color: #000;
+      font-size: .5em;
+      width: 100%;
+      background-color: #FFF;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    &.add {
+      &:after {
+        font-size: .6em;
+      }
+    }
   }
 }

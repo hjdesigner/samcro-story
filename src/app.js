@@ -23,7 +23,8 @@ class App extends Component {
       userNome: '',
       userLastName: '',
       userEmail: '',
-      statusFinish: 'disable'
+      statusFinish: 'disable',
+      addItem: ''
     }
     this.handleChangeName = (e) => {
       const cartLength = this.state.itemsCart
@@ -56,7 +57,10 @@ class App extends Component {
         .then(response => response.json())
         .then((data) => {
           const result = data
-          this.setState({product: result})
+          this.setState({
+            product: result,
+            addItem: ''
+          })
         })
     }
     this.handleClickProduct = () => {
@@ -77,7 +81,8 @@ class App extends Component {
         cartNumber: numberState,
         totalStand: valueTotal,
         payableSuccess: [],
-        idOrder: ''
+        idOrder: '',
+        addItem: 'add'
       })
     }
     this.handleRemoveProduct = (e) => {
@@ -222,7 +227,10 @@ class App extends Component {
           <div className='main'>
             <div className='container'>
               <Route exact path='/' render={(...props) => (<Showcase items={this.state.showCase} handleShowCase={this.handleShowCase} />)} />
-              <Route exact path='/produto/:slug' render={(...props) => (<Product item={this.state.product} handleClickProduct={this.handleClickProduct} />)} />
+              <Route exact path='/produto/:slug' render={(...props) => (<Product
+                item={this.state.product}
+                handleClickProduct={this.handleClickProduct}
+                addItem={this.state.addItem} />)} />
               <Route exact path='/carrinho' render={(...props) => (<Cart
                 items={this.state.itemsCart}
                 cartNumber={this.state.cartNumber}
