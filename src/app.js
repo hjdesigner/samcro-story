@@ -19,7 +19,36 @@ class App extends Component {
       itemsCart: [],
       totalStand: 0,
       payableSuccess: [],
-      idOrder: ''
+      idOrder: '',
+      userNome: '',
+      userLastName: '',
+      userEmail: '',
+      statusFinish: 'disable'
+    }
+    this.handleChangeName = (e) => {
+      const cartLength = this.state.itemsCart
+      const emailLength = this.state.userEmail
+      const nameValue = e.target.value
+      this.setState({ userNome: nameValue })
+      if (cartLength.length >= 1 && emailLength.length > 1 && nameValue.length > 1) {
+        this.setState({ statusFinish: '' })
+      } else {
+        this.setState({ statusFinish: 'disable' })
+      }
+    }
+    this.handleChangeLastName = (e) => {
+      this.setState({ userLastName: e.target.value })
+    }
+    this.handleChangeEmail = (e) => {
+      const cartLength = this.state.itemsCart
+      const emailValue = e.target.value
+      const nameLength = this.state.userNome
+      this.setState({ userEmail: emailValue })
+      if (cartLength.length >= 1 && nameLength.length > 1 && emailValue.length > 1) {
+        this.setState({ statusFinish: '' })
+      } else {
+        this.setState({ statusFinish: 'disable' })
+      }
     }
     this.handleShowCase = (e) => {
       const idProduct = e.target.closest('a').getAttribute('data-id')
@@ -64,6 +93,9 @@ class App extends Component {
         cartNumber: numberState,
         totalStand: valueTotal
       })
+      if (numberState === 0) {
+        this.setState({ statusFinish: 'disable' })
+      }
     }
     this.formatValue = (number) => {
       let numberFormat = number.toFixed(2).split('.')
@@ -196,7 +228,14 @@ class App extends Component {
                 cartNumber={this.state.cartNumber}
                 totalStand={this.state.totalStand}
                 handleRemoveProduct={this.handleRemoveProduct}
-                handleFinish={this.handleFinish} />)} />
+                handleFinish={this.handleFinish}
+                handleChangeName={this.handleChangeName}
+                handleChangeLastName={this.handleChangeLastName}
+                handleChangeEmail={this.handleChangeEmail}
+                userNome={this.state.userNome}
+                userLastName={this.state.userLastName}
+                userEmail={this.state.userEmail}
+                statusFinish={this.state.statusFinish} />)} />
               <Route exact path='/sucesso' render={(...props) => (<Success payableSuccess={this.state.payableSuccess} idOrder={this.state.idOrder} />)} />
             </div>
           </div>

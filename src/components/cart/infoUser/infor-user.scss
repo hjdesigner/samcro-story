@@ -1,0 +1,40 @@
+.info-user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__field {
+    width: 100%;
+  }
+  label {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: .8em;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+  }
+  input {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .info-user {
+    label {
+      font-size: 1em;
+    }
+    input {
+      height: 50px;
+    }
+    &__field {
+      width: 48%;
+      &--email {
+        width: 100%;
+      }
+    }
+  }
+}
