@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './totalStand.scss'
 
-const TotalStand = ({ cartNumber, totalStand }) => (
+const TotalStand = ({ cartNumber, totalStand, handleFinish }) => (
   <div className='total-stand'>
     <h2>Subtotal</h2>
     <ul>
@@ -18,7 +18,7 @@ const TotalStand = ({ cartNumber, totalStand }) => (
     </ul>
     <h3>Total: R$ {totalStand}</h3>
     <div className='total-stand__button'>
-      <Link to='/sucesso'>Finalizar comprar</Link>
+      <Link to='/sucesso' onClick={handleFinish}>Finalizar comprar</Link>
     </div>
   </div>
 )

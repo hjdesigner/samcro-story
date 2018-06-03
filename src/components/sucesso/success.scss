@@ -1,0 +1,39 @@
+.page-success {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  h1 {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: rgb(255,255,255);
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  &__order {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: rgb(255,255,255);
+    box-sizing: border-box;
+    p {
+      font-size: 1em;
+      font-weight: 400;
+      color: rgb(0, 0, 0);
+      &:first-child {
+        font-weight: 500;
+      }
+      &:nth-child(2) {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page-sucess {
+    h1 {
+      font-size: 1.2em;
+    }
+  }
+}
