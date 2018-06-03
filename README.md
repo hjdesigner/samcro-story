@@ -6,7 +6,7 @@ The project is an online platform that sells used products.
 
 ## Screenshot
 
-![SAMCRO](https://henriquemelanda.com.br/assests/img/samcro.jpg)
+![SAMCRO](http://henriquemelanda.com.br/assests/img/samcro.jpg)
 
 ## What's inside it?
 
