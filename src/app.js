@@ -24,7 +24,8 @@ class App extends Component {
       userLastName: '',
       userEmail: '',
       statusFinish: 'disable',
-      addItem: ''
+      addItem: '',
+      statusProduct: false
     }
     this.handleChangeName = (e) => {
       const cartLength = this.state.itemsCart
@@ -59,7 +60,8 @@ class App extends Component {
           const result = data
           this.setState({
             product: result,
-            addItem: ''
+            addItem: '',
+            statusProduct: true
           })
         })
     }
@@ -218,6 +220,21 @@ class App extends Component {
       const result = data
       this.setState({showCase: result})
     })
+    const url = window.location.href
+    const idProduct = url.split('-').slice(-1)[0]
+    if (idProduct > 0 && this.state.statusProduct === false) {
+      fetch(`http://localhost:3004/product/${idProduct}`)
+        .then(response => response.json())
+        .then((data) => {
+          const result = data
+          console.log(result)
+          this.setState({
+            product: result,
+            addItem: '',
+            statusProduct: false
+          })
+        })
+    }
   }
   render () {
     return (
