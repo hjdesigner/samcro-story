@@ -2,11 +2,11 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import pagarme from 'pagarme'
-import Header from './components/header'
-import Showcase from './components/showcase'
-import Product from './components/product'
-import Cart from './components/cart'
-import Success from './components/sucesso'
+import Header from 'containers/header'
+import Home from 'containers/home'
+import Product from 'containers/product'
+import Checkout from 'containers/checkout'
+import Success from 'containers/success'
 import './default.scss'
 
 class App extends Component {
@@ -240,29 +240,25 @@ class App extends Component {
       <Router>
         <div>
           <Header cartNumber={this.state.cartNumber} />
-          <div className='main'>
-            <div className='container'>
-              <Route exact path='/' render={(...props) => (<Showcase items={this.state.showCase} handleShowCase={this.handleShowCase} />)} />
-              <Route exact path='/produto/:slug' render={(...props) => (<Product
-                item={this.state.product}
-                handleClickProduct={this.handleClickProduct}
-                addItem={this.state.addItem} />)} />
-              <Route exact path='/carrinho' render={(...props) => (<Cart
-                items={this.state.itemsCart}
-                cartNumber={this.state.cartNumber}
-                totalStand={this.state.totalStand}
-                handleRemoveProduct={this.handleRemoveProduct}
-                handleFinish={this.handleFinish}
-                handleChangeName={this.handleChangeName}
-                handleChangeLastName={this.handleChangeLastName}
-                handleChangeEmail={this.handleChangeEmail}
-                userNome={this.state.userNome}
-                userLastName={this.state.userLastName}
-                userEmail={this.state.userEmail}
-                statusFinish={this.state.statusFinish} />)} />
-              <Route exact path='/sucesso' render={(...props) => (<Success payableSuccess={this.state.payableSuccess} idOrder={this.state.idOrder} />)} />
-            </div>
-          </div>
+          <Route exact path='/' render={(...props) => (<Home showCase={this.state.showCase} handleShowCase={this.handleShowCase} />)} />
+          <Route exact path='/produto/:slug' render={(...props) => (<Product
+            item={this.state.product}
+            handleClickProduct={this.handleClickProduct}
+            addItem={this.state.addItem} />)} />
+          <Route exact path='/carrinho' render={(...props) => (<Checkout
+            items={this.state.itemsCart}
+            cartNumber={this.state.cartNumber}
+            totalStand={this.state.totalStand}
+            handleRemoveProduct={this.handleRemoveProduct}
+            handleFinish={this.handleFinish}
+            handleChangeName={this.handleChangeName}
+            handleChangeLastName={this.handleChangeLastName}
+            handleChangeEmail={this.handleChangeEmail}
+            userNome={this.state.userNome}
+            userLastName={this.state.userLastName}
+            userEmail={this.state.userEmail}
+            statusFinish={this.state.statusFinish} />)} />
+          <Route exact path='/sucesso' render={(...props) => (<Success payableSuccess={this.state.payableSuccess} idOrder={this.state.idOrder} />)} />
         </div>
       </Router>
     )

@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from './logo.jpg'
-import Cart from './cart'
+import Cart from 'components/header/cart'
 import './header.scss'
 
 const Header = ({ cartNumber }) => (
