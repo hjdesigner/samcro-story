@@ -7,7 +7,7 @@ const Showcase = ({ items, handleShowCase }) => (
   <ul className='showcase'>
     {items.map((item, index) =>
       <li key={index}>
-        <Link to={`/produto${item.url}-${item.id}`} onClick={handleShowCase} data-id={item.id}>
+        <Link to={`/produto${item.url}-${item.id}`} onClick={handleShowCase(item.id)}>
           <figure>
             <img src={item.image} alt={item.name} />
           </figure>

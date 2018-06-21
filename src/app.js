@@ -52,8 +52,8 @@ class App extends Component {
         this.setState({ statusFinish: 'disable' })
       }
     }
-    this.handleShowCase = (e) => {
-      const idProduct = e.target.closest('a').getAttribute('data-id')
+    this.handleShowCase = (id) => () => {
+      const idProduct = id
       fetch(`http://localhost:3004/product/${idProduct}`)
         .then(response => response.json())
         .then((data) => {
