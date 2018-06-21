@@ -38,8 +38,8 @@ describe('<Showcase />', () => {
       }
     ]
     handleShowCase = (id) => () => {}
-    wrapper1 = shallow(<Showcase items={data1} handleShowCase={handleShowCase}/>)
-    wrapper2 = shallow(<Showcase items={data2} handleShowCase={handleShowCase}/>)
+    wrapper1 = shallow(<Showcase items={data1} handleShowCase={handleShowCase} />)
+    wrapper2 = shallow(<Showcase items={data2} handleShowCase={handleShowCase} />)
   })
   it('Should wrapper1 return one li', () => {
     expect(wrapper1.find('li')).to.have.length(1)
