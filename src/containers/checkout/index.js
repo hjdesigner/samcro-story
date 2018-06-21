@@ -12,6 +12,7 @@ const Checkout = ({
   handleFinish,
   handleChangeName,
   userNome,
+  userError,
   userLastName,
   handleChangeLastName,
   userEmail,
@@ -23,6 +24,7 @@ const Checkout = ({
           <h1>Carrinho</h1>
           <Showcase items={items} handleRemoveProduct={handleRemoveProduct} />
           <TotalStand
+            userError={userError}
             userNome={userNome}
             handleChangeName={handleChangeName}
             cartNumber={cartNumber}

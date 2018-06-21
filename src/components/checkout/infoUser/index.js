@@ -2,7 +2,7 @@
 import React from 'react'
 import './infor-user.scss'
 
-const InfoUser = ({ userNome, handleChangeName, userLastName, handleChangeLastName, userEmail, handleChangeEmail }) => (
+const InfoUser = ({ userNome, userError, handleChangeName, userLastName, handleChangeLastName, userEmail, handleChangeEmail }) => (
   <div className='info-user'>
     <div className='info-user__field'>
       <label htmlFor='name'>Nome:</label>
@@ -16,6 +16,7 @@ const InfoUser = ({ userNome, handleChangeName, userLastName, handleChangeLastNa
       <label htmlFor='email'>E-mail:</label>
       <input type='email' name='email' value={userEmail} onChange={handleChangeEmail} placeholder='Digite seu e-mail' />
     </div>
+    <div className='error'>{userError}</div>
   </div>
 )
 

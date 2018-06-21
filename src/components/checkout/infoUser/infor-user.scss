@@ -21,6 +21,11 @@
     padding: 10px;
     box-sizing: border-box;
   }
+  .error {
+    color: rgb(183, 0, 0);
+    font-size: .8em;
+    font-weight: 600;
+  }
 }
 @media screen and (min-width: 1024px) {
   .info-user {

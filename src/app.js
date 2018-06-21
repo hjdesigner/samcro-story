@@ -25,7 +25,8 @@ class App extends Component {
       userEmail: '',
       statusFinish: 'disable',
       addItem: '',
-      statusProduct: false
+      statusProduct: false,
+      userError: ''
     }
     this.handleChangeName = (e) => {
       const cartLength = this.state.itemsCart
@@ -127,7 +128,27 @@ class App extends Component {
           })
         })
     }
-    this.handleFinish = () => {
+    this.validEmail = (email) => {
+      const str = email
+      const filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+      if (filtro.test(str)) {
+        return true
+      } else {
+        return false
+      }
+    }
+    this.handleFinish = (e) => {
+      const valueEmail = this.validEmail(this.state.userEmail)
+      if (valueEmail === false) {
+        e.preventDefault()
+        this.setState({
+          userError: 'Preencha com um e-mail válido.'
+        })
+        return
+      }
+      this.setState({
+        userError: ''
+      })
       const items = this.state.itemsCart
       const itemsPagarme = []
       items.forEach(item => {
@@ -255,6 +276,7 @@ class App extends Component {
             handleChangeLastName={this.handleChangeLastName}
             handleChangeEmail={this.handleChangeEmail}
             userNome={this.state.userNome}
+            userError={this.state.userError}
             userLastName={this.state.userLastName}
             userEmail={this.state.userEmail}
             statusFinish={this.state.statusFinish} />)} />

@@ -10,6 +10,7 @@ const TotalStand = ({
   handleFinish,
   handleChangeName,
   userNome,
+  userError,
   userLastName,
   handleChangeLastName,
   userEmail,
@@ -30,6 +31,7 @@ const TotalStand = ({
       <h3>Total: R$ {totalStand}</h3>
       <div className='total-stand__user'>
         <InfoUser
+          userError={userError}
           handleChangeName={handleChangeName}
           userNome={userNome}
           userLastName={userLastName}
