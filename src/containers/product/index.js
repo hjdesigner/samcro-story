@@ -10,13 +10,13 @@ import Description from 'components/product/description'
 import './product.scss'
 
 const Product = ({ item, handleClickProduct, addItem }) => (
-  <div className='main'>
+  <main className='main'>
     <div className='container'>
       <div className='product'>
-        <div className='product__image'>
+        <section className='product__image'>
           <Image image={item.image} name={item.name} />
-        </div>
-        <div className='product__details'>
+        </section>
+        <section className='product__details'>
           <Title title={item.name} />
           <Prices
             priceOrigin={item.priceOrigin}
@@ -26,13 +26,13 @@ const Product = ({ item, handleClickProduct, addItem }) => (
           <Button text='Eu quero' handleClickProduct={handleClickProduct} addItem={addItem} />
           <Salesman name={item.salesman} />
           <Comments />
-        </div>
-        <div className='product__info'>
+        </section>
+        <section className='product__info'>
           <Description text={item.descriptiom} />
-        </div>
+        </section>
       </div>
     </div>
-  </div>
+  </main>
 )
 
 export default Product

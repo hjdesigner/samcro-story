@@ -3,7 +3,7 @@ import React from 'react'
 import './success.scss'
 
 const Success = ({ payableSuccess, idOrder }) => (
-  <div className='page-success'>
+  <main className='page-success'>
     <h1>Compra finalizada com sucesso</h1>
     <div className='page-success__order'>
       <p>Numero do pedido: {idOrder}</p>
@@ -12,7 +12,7 @@ const Success = ({ payableSuccess, idOrder }) => (
       <p>Samcro: 25% - {payableSuccess[1]}</p>
       <p>Socio: 15% = {payableSuccess[2]}</p>
     </div>
-  </div>
+  </main>
 )
 
 export default Success

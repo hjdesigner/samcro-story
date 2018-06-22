@@ -18,7 +18,7 @@ const Checkout = ({
   userEmail,
   handleChangeEmail,
   statusFinish }) => (
-    <div className='main'>
+    <main className='main'>
       <div className='container'>
         <div className='page-cart'>
           <h1>Carrinho</h1>
@@ -37,7 +37,7 @@ const Checkout = ({
             statusFinish={statusFinish} />
         </div>
       </div>
-    </div>
+    </main>
 )
 
 export default Checkout

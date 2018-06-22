@@ -8,14 +8,14 @@ import './header.scss'
 const Header = ({ cartNumber }) => (
   <header className='header'>
     <div className='container'>
-      <div className='header__logo'>
+      <section className='header__logo'>
         <Link to='/'>
           <img src={logo} alt='Samcro Store' />
         </Link>
-      </div>
-      <div className='header__cart'>
+      </section>
+      <section className='header__cart'>
         <Cart cartNumber={cartNumber} />
-      </div>
+      </section>
     </div>
   </header>
 )
